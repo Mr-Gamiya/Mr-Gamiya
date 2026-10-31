@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: profile-visual-assets
+  group: ${{ github.workflow }}
   cancel-in-progress: false
 
 jobs:

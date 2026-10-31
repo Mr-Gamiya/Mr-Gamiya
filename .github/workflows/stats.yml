@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: profile-visual-assets
+  group: ${{ github.workflow }}
   cancel-in-progress: false
 
 jobs:
@@ -29,5 +29,6 @@ jobs:
           git add assets/generated/
           if ! git diff --cached --quiet; then
             git commit -m 'chore: refresh live profile cards'
+            git pull --rebase origin main
             git push
           fi
