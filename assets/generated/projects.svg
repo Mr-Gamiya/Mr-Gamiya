@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="886" height="209" viewBox="0 0 886 209" role="img" aria-label="Featured original GitHub repositories">
+<defs><linearGradient id="edge"><stop stop-color="#6ee7f9"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+<rect x="2" y="2" width="882" height="205" rx="18" fill="#0b1228" stroke="#365675"/>
+<path d="M20 2H866" stroke="url(#edge)" stroke-width="3"/>
+<text x="28" y="39" fill="#6ee7f9" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">FEATURED / ORIGINAL PROJECTS</text>
+<rect x="28" y="57" width="404" height="130" rx="13" fill="#111c35" stroke="#253e5f"/>
+<text x="45" y="86" fill="#6ee7f9" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">LUMIRA ’26</text>
+<text x="45" y="114" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">Event tickets, QR scanning &amp; admin tools</text>
+<text x="45" y="152" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">JavaScript  ·  ★ 0  ·  Forks 0</text>
+<rect x="448" y="57" width="404" height="130" rx="13" fill="#111c35" stroke="#253e5f"/>
+<text x="465" y="86" fill="#6ee7f9" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Minecraft Cheat Scanner</text>
+<text x="465" y="114" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">Read only local PowerShell scanner</text>
+<text x="465" y="152" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">PowerShell  ·  ★ 0  ·  Forks 0</text>
+</svg>

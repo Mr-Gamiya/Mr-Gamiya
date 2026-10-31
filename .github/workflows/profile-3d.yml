@@ -1,0 +1,34 @@
+name: 3D contribution graph
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 1 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visual-assets
+  cancel-in-progress: false
+
+jobs:
+  graph:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+      - name: Generate 3D contribution calendar
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Publish generated graphs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add profile-3d-contrib/
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh 3D contribution graph'
+            git push
+          fi

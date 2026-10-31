@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="100" viewBox="0 0 1200 100" role="img" aria-labelledby="title">
+  <title id="title">Thanks for visiting — keep building</title>
+  <defs><linearGradient id="bg" x2="1"><stop stop-color="#080b1b"/><stop offset=".5" stop-color="#11213c"/><stop offset="1" stop-color="#080b1b"/></linearGradient><linearGradient id="wave" x2="1"><stop stop-color="#38bdf8" stop-opacity="0"/><stop offset=".5" stop-color="#6ee7f9"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></linearGradient></defs>
+  <rect x="8" y="8" width="1184" height="84" rx="18" fill="url(#bg)" stroke="#3b5c89" stroke-opacity=".6"/>
+  <path d="M18 24Q210 2 408 23T798 23T1182 23" fill="none" stroke="url(#wave)" stroke-width="2"><animate attributeName="opacity" values=".35;1;.35" dur="5s" repeatCount="indefinite"/></path>
+  <text x="600" y="62" text-anchor="middle" fill="#d4e6ff" font-family="Segoe UI,Arial,sans-serif" font-size="19" letter-spacing="2">THANKS FOR VISITING · KEEP BUILDING</text>
+</svg>

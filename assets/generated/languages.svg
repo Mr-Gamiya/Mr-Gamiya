@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="243" viewBox="0 0 470 243" role="img" aria-label="Languages in public original repositories">
+<defs><linearGradient id="edge"><stop stop-color="#6ee7f9"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+<rect x="2" y="2" width="466" height="239" rx="18" fill="#0b1228" stroke="#365675"/>
+<path d="M20 2H450" stroke="url(#edge)" stroke-width="3"/>
+<text x="28" y="39" fill="#6ee7f9" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">LANGUAGES / PUBLIC SOURCE</text>
+<text x="28" y="72" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">PowerShell</text>
+<text x="428" y="72" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">53%</text>
+<rect x="156" y="60" width="252" height="9" rx="4" fill="#253857"/>
+<rect x="156" y="60" width="132" height="9" rx="4" fill="#6ee7f9"/>
+<text x="28" y="103" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Rust</text>
+<text x="428" y="103" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">33%</text>
+<rect x="156" y="91" width="252" height="9" rx="4" fill="#253857"/>
+<rect x="156" y="91" width="84" height="9" rx="4" fill="#a78bfa"/>
+<text x="28" y="134" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">JavaScript</text>
+<text x="428" y="134" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">8%</text>
+<rect x="156" y="122" width="252" height="9" rx="4" fill="#253857"/>
+<rect x="156" y="122" width="20" height="9" rx="4" fill="#60a5fa"/>
+<text x="28" y="165" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">CSS</text>
+<text x="428" y="165" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">3%</text>
+<rect x="156" y="153" width="252" height="9" rx="4" fill="#253857"/>
+<rect x="156" y="153" width="9" height="9" rx="4" fill="#c084fc"/>
+<text x="28" y="196" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">C++</text>
+<text x="428" y="196" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">3%</text>
+<rect x="156" y="184" width="252" height="9" rx="4" fill="#253857"/>
+<rect x="156" y="184" width="7" height="9" rx="4" fill="#34d399"/>
+</svg>
