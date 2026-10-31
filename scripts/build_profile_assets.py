@@ -102,6 +102,21 @@ def render_stats(user: dict, repos: list[dict], cal: dict) -> str:
     return shell(886, 171, "Live GitHub statistics for Mr-Gamiya", "\n".join(blocks))
 
 
+def render_stats_mobile(user: dict, repos: list[dict], cal: dict) -> str:
+    own = [repo for repo in repos if not repo["fork"]]
+    values = [("PUBLIC REPOS", user["public_repos"]),
+              ("STARS RECEIVED", sum(repo["stargazers_count"] for repo in own)),
+              ("FORKS", sum(repo["forks_count"] for repo in own)),
+              ("FOLLOWERS", user["followers"]),
+              ("YEAR CONTRIBUTIONS", cal["totalContributions"])]
+    blocks = [label(20, 36, "GITHUB / LIVE OVERVIEW", 14, CYAN, 700)]
+    for index, (name, value) in enumerate(values):
+        y = 50 + index * 49
+        blocks += [f'<rect x="20" y="{y}" width="360" height="42" rx="8" fill="{PANEL}"/>',
+                   label(34, y + 27, name, 12, MUTED, 700), label(310, y + 28, value, 21, TEXT, 800)]
+    return shell(400, 313, "Live GitHub statistics for Mr-Gamiya, mobile layout", "\n".join(blocks))
+
+
 def render_languages(totals: dict[str, int]) -> str:
     ranking = sorted(totals.items(), key=lambda item: item[1], reverse=True)[:5]
     denominator = sum(value for _, value in ranking) or 1
@@ -127,6 +142,19 @@ def render_trophies(user: dict, repos: list[dict], cal: dict) -> str:
                    label(x + 15, 96, "✦", 25, PURPLE, 800), label(x + 54, 99, value, 27, TEXT, 800),
                    label(x + 15, 132, name, 12, MUTED, 700)]
     return shell(886, 177, "Live GitHub milestone cards", "\n".join(blocks))
+
+
+def render_trophies_mobile(user: dict, repos: list[dict], cal: dict) -> str:
+    own = [repo for repo in repos if not repo["fork"]]
+    facts = [("REPOSITORIES", user["public_repos"]), ("STARS", sum(r["stargazers_count"] for r in own)),
+             ("FOLLOWERS", user["followers"]), ("CONTRIBUTIONS", cal["totalContributions"])]
+    blocks = [label(20, 36, "MILESTONES / GITHUB DATA", 14, CYAN, 700)]
+    for index, (name, value) in enumerate(facts):
+        x = 20 + (index % 2) * 185
+        y = 50 + (index // 2) * 103
+        blocks += [f'<rect x="{x}" y="{y}" width="175" height="93" rx="10" fill="{PANEL}" stroke="#253e5f"/>',
+                   label(x + 14, y + 39, value, 28, TEXT, 800), label(x + 14, y + 70, name, 11, MUTED, 700)]
+    return shell(400, 267, "Live GitHub milestone cards, mobile layout", "\n".join(blocks))
 
 
 def render_activity(cal: dict) -> str:
@@ -157,6 +185,19 @@ def render_projects(repos_by_name: dict[str, dict]) -> str:
     return shell(886, 209, "Featured original GitHub repositories", "\n".join(blocks))
 
 
+def render_projects_mobile(repos_by_name: dict[str, dict]) -> str:
+    projects = [("school", "LUMIRA ’26", "Event tickets, QR scanning & admin tools"),
+                ("MC-Cheat-detector", "Minecraft Cheat Scanner", "Read only local PowerShell scanner")]
+    blocks = [label(20, 36, "FEATURED / ORIGINAL PROJECTS", 14, CYAN, 700)]
+    for index, (key, title, summary) in enumerate(projects):
+        repo = repos_by_name[key]
+        y = 50 + index * 137
+        blocks += [f'<rect x="20" y="{y}" width="360" height="125" rx="11" fill="{PANEL}" stroke="#253e5f"/>',
+                   label(34, y + 29, title, 17, CYAN, 700), label(34, y + 58, summary, 11, TEXT),
+                   label(34, y + 96, f"{repo.get('language') or 'Repository'}  ·  ★ {repo['stargazers_count']}  ·  Forks {repo['forks_count']}", 12, MUTED)]
+    return shell(400, 345, "Featured original GitHub repositories, mobile layout", "\n".join(blocks))
+
+
 def main() -> None:
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
@@ -173,11 +214,14 @@ def main() -> None:
             totals[name] = totals.get(name, 0) + amount
     by_name = {repo["name"]: repo for repo in repos}
     save("stats.svg", render_stats(user, repos, cal))
+    save("stats-mobile.svg", render_stats_mobile(user, repos, cal))
     save("languages.svg", render_languages(totals))
     save("trophies.svg", render_trophies(user, repos, cal))
+    save("trophies-mobile.svg", render_trophies_mobile(user, repos, cal))
     save("activity.svg", render_activity(cal))
     save("projects.svg", render_projects(by_name))
-    print("Generated five factual SVG cards from GitHub API data")
+    save("projects-mobile.svg", render_projects_mobile(by_name))
+    print("Generated eight factual SVG cards from GitHub API data")
 
 
 if __name__ == "__main__":

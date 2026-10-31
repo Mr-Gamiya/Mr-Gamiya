@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="assets/header.svg" alt="Gamitha — developer building useful web tools and PowerShell utilities" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/header-mobile.svg" />
+  <img src="assets/header.svg" alt="Gamitha — developer building useful web tools and PowerShell utilities" width="100%" />
+</picture>
 
 <br />
 
@@ -42,8 +45,11 @@ These technologies appear in my public repositories:
 
 <div align="center">
 
-<img src="assets/generated/stats.svg" alt="Daily GitHub statistics for Mr-Gamiya" width="100%" />
-<img src="assets/generated/languages.svg" alt="Languages by bytes in original public repositories" width="70%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/generated/stats-mobile.svg" />
+  <img src="assets/generated/stats.svg" alt="Daily GitHub statistics for Mr-Gamiya" width="100%" />
+</picture>
+<img src="assets/generated/languages.svg" alt="Languages by bytes in original public repositories" width="470" />
 
 <br />
 
@@ -63,7 +69,10 @@ These technologies appear in my public repositories:
 
 <div align="center">
 
-<img src="assets/generated/trophies.svg" alt="Live GitHub milestone cards for Mr-Gamiya" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/generated/trophies-mobile.svg" />
+  <img src="assets/generated/trophies.svg" alt="Live GitHub milestone cards for Mr-Gamiya" width="100%" />
+</picture>
 
 </div>
 
@@ -71,7 +80,10 @@ These technologies appear in my public repositories:
 
 <div align="center">
 
-<img src="assets/generated/projects.svg" alt="Featured original projects: LUMIRA ’26 and Minecraft Cheat Scanner" width="100%" />
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/generated/projects-mobile.svg" />
+  <img src="assets/generated/projects.svg" alt="Featured original projects: LUMIRA ’26 and Minecraft Cheat Scanner" width="100%" />
+</picture>
 
 </div>
 

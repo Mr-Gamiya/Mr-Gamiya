@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="313" viewBox="0 0 400 313" role="img" aria-label="Live GitHub statistics for Mr-Gamiya, mobile layout">
+<defs><linearGradient id="edge"><stop stop-color="#6ee7f9"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+<rect x="2" y="2" width="396" height="309" rx="18" fill="#0b1228" stroke="#365675"/>
+<path d="M20 2H380" stroke="url(#edge)" stroke-width="3"/>
+<text x="20" y="36" fill="#6ee7f9" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">GITHUB / LIVE OVERVIEW</text>
+<rect x="20" y="50" width="360" height="42" rx="8" fill="#111c35"/>
+<text x="34" y="77" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">PUBLIC REPOS</text>
+<text x="310" y="78" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="800">5</text>
+<rect x="20" y="99" width="360" height="42" rx="8" fill="#111c35"/>
+<text x="34" y="126" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">STARS RECEIVED</text>
+<text x="310" y="127" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="800">0</text>
+<rect x="20" y="148" width="360" height="42" rx="8" fill="#111c35"/>
+<text x="34" y="175" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">FORKS</text>
+<text x="310" y="176" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="800">0</text>
+<rect x="20" y="197" width="360" height="42" rx="8" fill="#111c35"/>
+<text x="34" y="224" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">FOLLOWERS</text>
+<text x="310" y="225" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="800">3</text>
+<rect x="20" y="246" width="360" height="42" rx="8" fill="#111c35"/>
+<text x="34" y="273" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">YEAR CONTRIBUTIONS</text>
+<text x="310" y="274" fill="#dbeafe" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="800">37</text>
+</svg>
