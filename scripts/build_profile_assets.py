@@ -168,6 +168,9 @@ def render_activity(cal: dict) -> str:
             level = 0 if count == 0 else min(4, 1 + int(count / max(1, maximum) * 3))
             x, y = 28 + wi * 16, 60 + di * 16
             blocks.append(f'<rect x="{x}" y="{y}" width="12" height="12" rx="3" fill="{colors[level]}"/>')
+    # A faint scan line adds motion without changing the factual contribution grid.
+    blocks.append('<rect x="20" y="58" width="16" height="113" rx="6" fill="#6ee7f9" opacity=".10">'
+                  '<animate attributeName="x" values="20;872;20" dur="16s" repeatCount="indefinite"/></rect>')
     blocks.append(label(28, 193, f"{cal['totalContributions']} contributions in the past year", 12, MUTED))
     return shell(910, 213, "GitHub contribution activity calendar for Mr-Gamiya", "\n".join(blocks))
 
