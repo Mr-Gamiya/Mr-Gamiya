@@ -371,6 +371,7 @@
 <rect x="860" y="76" width="12" height="12" rx="3" fill="#192744"/>
 <rect x="860" y="92" width="12" height="12" rx="3" fill="#192744"/>
 <rect x="860" y="108" width="12" height="12" rx="3" fill="#192744"/>
+<rect x="860" y="124" width="12" height="12" rx="3" fill="#192744"/>
 <rect x="20" y="58" width="16" height="113" rx="6" fill="#6ee7f9" opacity=".10"><animate attributeName="x" values="20;872;20" dur="16s" repeatCount="indefinite"/></rect>
 <text x="28" y="193" fill="#91a8c8" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="500">40 contributions in the past year</text>
 </svg>
